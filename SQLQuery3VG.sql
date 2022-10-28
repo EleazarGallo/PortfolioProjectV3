@@ -77,7 +77,7 @@ FROM [RoosterProjV2].[dbo].[vgsales$]
 group by genre
 order by Total_year desc
 
---total amount of content realesd by year
+--total amount of content released by year
 SELECT year, count(year) as total_year
 FROM [RoosterProjV2].[dbo].[vgsales$]
 group by year
@@ -98,7 +98,7 @@ where Platform ='X360' and year = 2009
 group by year
 order by Total_year desc
 
--- out of the games relseased in 2009 what where the top genres.
+-- out of the games released in 2009 what where the top genres.
 SELECT  count(genre) as total_genre, Genre
 FROM [RoosterProjV2].[dbo].[vgsales$]
 where Platform ='X360' and year = 2009
